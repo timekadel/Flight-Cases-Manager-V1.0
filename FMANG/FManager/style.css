@@ -1,0 +1,359 @@
+@font-face{
+	font-family: spro;
+	src: url(fonts/SourceSansPro-Semibold.ttf);
+}
+
+@font-face{
+	font-family: sprol;
+	src: url(fonts/SourceSansPro-Light.ttf);
+}
+
+body{
+	background: #F9F9F9;
+	background-size: 100%;
+	margin: 0;
+	padding: 0
+	overflow:scroll;
+}
+
+.upper{
+	position:absolute;
+	font-family: spro;
+	top:0px;
+	left:0px;
+	right:0px;
+	background-image: url("desktop1.jpg");
+	background-size:cover;
+	background-repeat: none;
+	height: 90%;
+	width:100%;
+}
+
+.uppermost{
+	position:absolute
+	top:0px;
+	left:0px;
+	right:0px;
+	background-color:#032F3E;
+	background-size:cover;
+	background-repeat: none;
+	opacity: 0.5;
+	height: 100%;
+	width:100%;
+}
+
+.title{
+	white-space: nowrap;
+ 	overflow: hidden;
+	position: absolute;
+	color: white;
+	font-size: 75px;
+	top:20%;
+  	left:50%;
+  	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+ 	margin:0;
+}
+
+.subtitle{
+	position: absolute;
+	white-space: nowrap;
+ 	overflow: hidden;
+	color: white;
+	font-size: 25px;
+	top:40%;
+  	left:50%;
+  	font-family: sprol;
+  	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+ 	width:auto;
+}
+
+.buttons{
+	position:absolute;
+	top:470px;
+	right:41%;
+  	left:50%;
+  	width:290px;
+  	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+      
+  to {
+	opacity: 1;
+  }
+}
+
+#tb{
+	/*display: none;*/
+}
+
+#tb2{
+	display: none;
+}
+
+.logbox{
+	margin-top:20px;
+	position:absolute;
+	top:320px;
+  	left:50%;
+  	font-family: sprol;
+  	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+    animation-duration: 0.8s;
+  	animation-name: fade;
+}
+
+.tb1{
+	background-color:transparent;
+ 	margin-top:20px;
+ 	height:30px;
+ 	width:280px;
+ 	border:solid 1px white;
+ 	border-radius: 4px;
+ 	color: white;
+ 	padding-left: 5px;
+   	font-family: sprol;
+   	font-size:20px;
+}
+
+.login{
+	position:absolute;
+	right:0px;
+	color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+	height: 25px;
+	width:130px;
+	background-color: #FE4542;
+	border-radius: 2px;
+	text-align:center;
+}
+
+@-webkit-keyframes log {
+  from {
+  	color:white;
+  }
+      
+  to {
+	    background-color:white;
+	    color:grey;
+  }
+}
+
+.login:hover{
+    animation-duration: 1s;
+  	animation-name: log;
+	background-color:white;
+	color:grey;
+ 	cursor: pointer; 
+ 	cursor: hand;
+}
+
+
+.register{
+	position:absolute;
+	left:0px;
+	color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+	height: 24px;
+	width:130px;
+	border: 1px solid white;
+	border-radius: 3px;
+	text-align:center;
+}
+
+.register:hover{
+    animation-duration: 1s;
+  	animation-name: log;
+	background-color:white;
+	color:grey;	
+ 	cursor: pointer; 
+ 	cursor: hand;
+}
+
+
+.header{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:50px;
+	border-bottom:1px solid #9EABB1;
+}
+
+.logosono{
+	position: absolute;
+	top:10px;
+	left:20px;
+}
+
+.logo{
+	position: absolute;
+	top:10px;
+	left:75px;
+}
+
+.txt{
+	position: relative;
+	white-space: nowrap;
+ 	overflow: hidden;
+	display: block;
+	margin-top:720px;
+	font-family: sprol;
+	font-size: 22px;
+	color:#032F3E;
+  	left:50%;
+  	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+ 	width:auto;
+ 	text-align:center;
+ 	padding-left: 100px;
+  	padding-right: 100px;
+  	margin-right:50px;
+}
+
+.about{
+	position:relative;
+	margin-top:35px;
+	width:100%;
+	height: 270px;
+	background-color: #EDEDED;
+	z-index: 1;
+}
+
+tr{
+	margin-left: 20px;
+}
+.tabl{
+	white-space: nowrap;
+ 	overflow: hidden;
+	padding-top:-100px;
+	height:270px;
+	margin-top:45px;
+	background-color: #EDEDED;
+	z-index:100;
+	text-align: center;
+}
+
+.sponsors{
+	position:relative;
+	margin-top:0;
+	width:100%;
+	height: 700px;
+	background-color: white;
+	text-align:center;
+	font-family: spro;
+	font-size: 40;
+	padding-top:80px;
+}
+
+@-webkit-keyframes grow1 {
+  from {
+    height:0px;
+  }
+      
+  to {
+	height:520px;
+  }
+}
+
+.line1{
+	position: absolute;
+	width:1px;
+	height:520px;
+	left:50%;
+ 	border: 0.06em solid #032F3E;
+ 	background-color: #032F3E;
+    animation-duration: 2s;
+  	animation-name: grow1;
+  	top:1250px;
+}
+
+.section{
+	margin-top:150px;
+	position:relative;
+	color: #032F3E;
+	font-family: sprol;
+	font-size:20px;
+	background-color: white;
+	z-index:1000;
+	height:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.info{
+	position:absolute;
+	top:1200px;
+	height: 200px;
+	z-index: 1000;
+}
+
+.circle{
+	position: absolute;
+  	left:50%;
+  	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+ 	width:130px;
+  	height:130px;
+  	border-radius:50%;
+ 	background-color: #032F3E;
+ 	top:1750px;
+ 	z-index:100;
+}
+
+.up{
+	font-family: spro;
+	font-size:35px;
+	color:white;
+	text-align:center;
+	margin-top:45px;
+}
+
+.footer{
+	position:absolute;
+	top:1800px;
+	width:100%;
+	height: 200px;
+	background-image: url("desktop1.jpg");
+	background-size:cover;
+	background-repeat: none;
+	z-index: 10
+}
+
+.footermost{
+	position:absolute;
+	top:1800px;
+	width:100%;
+	height: 200px;
+	background-color:#032F3E;
+	opacity: 0.8;
+	background-size:cover;
+	background-repeat: none;
+	z-index: 10
+}
+
+.wrapper{
+	position:absolute;
+	background-color: white;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height:100%;	
+}
+
+.left-div{
+	position:absolute;
+	background-color: #F8F8F8;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height:200px;
+}
